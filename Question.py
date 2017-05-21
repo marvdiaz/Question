@@ -4,7 +4,7 @@
 # programming will guess the number using minimal guesses.
 
 # Initial values for low and high will be asked, to know range
-print()
+print("\n")
 print("Enter two numbers, low then high.")
 low = int(input("low = ")) # Low number in the range
 high = int(input("high = ")) # High number in the range
@@ -29,7 +29,7 @@ while low<=high:
 
    # If the low and high are equal it will guess the right number in 0 guesses
    if low == high:
-      print("Your number is "+str(m)+". I found it in "+str(guess)+" guesses.\n")
+      print("Your number is "+str(m)+". I found it in "+str(guess)+" guesses.\n\n")
       break
 
    # It will initially ask the user for an input 
@@ -51,7 +51,7 @@ while low<=high:
       if guess > 1:
          print("I found your number in "+str(guess)+" guesses.\n")
       else:
-         print("I found your number in 1 guess.\n")
+         print("I found your number in 1 guess.\n\n")
       break
    # If the number is lower
    elif num == 'l':
@@ -63,4 +63,4 @@ while low<=high:
       guess += 1
 # If the while loop ends and the number was not found, inputs were inconsistent
 else:
-   print("Your answers have not been consistent.")
+   print("Your answers have not been consistent.\n\n")
